@@ -74,10 +74,29 @@
 }
 
 .ex-10-icon {
-    transition: 1s infinite;
+    animation: spin 1s linear infinite;
 }
 
-.ex-10-icon:hover {
-    transform: rotate(360deg);
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
 }
 
+.ex-11-icon:hover {
+    animation: spin2 2s linear;
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(300deg)
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
